@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calculator">
+    <div class="topbar">
+      <h1>Scientific Calculator</h1>
+      <button id="angleToggle" class="angle-btn" title="Toggle degrees / radians">DEG</button>
+    </div>
+
+    <div class="display">
+      <div id="expression" class="expression"></div>
+      <div id="result" class="result">0</div>
+    </div>
+
+    <div class="keys">
+      <!-- Row 1: scientific -->
+      <button class="key fn" data-insert="sin(">sin</button>
+      <button class="key fn" data-insert="cos(">cos</button>
+      <button class="key fn" data-insert="tan(">tan</button>
+      <button class="key fn" data-insert="π">π</button>
+      <button class="key fn" data-insert="e">e</button>
+
+      <!-- Row 2: scientific -->
+      <button class="key fn" data-insert="sin⁻¹(">sin⁻¹</button>
+      <button class="key fn" data-insert="cos⁻¹(">cos⁻¹</button>
+      <button class="key fn" data-insert="tan⁻¹(">tan⁻¹</button>
+      <button class="key fn" data-insert="ln(">ln</button>
+      <button class="key fn" data-insert="log(">log</button>
+
+      <!-- Row 3: scientific -->
+      <button class="key fn" data-insert="√(">√</button>
+      <button class="key fn" data-insert="^2">x²</button>
+      <button class="key fn" data-insert="^">xʸ</button>
+      <button class="key fn" data-insert="!">x!</button>
+      <button class="key fn" data-insert="1/(">1/x</button>
+
+      <!-- Row 4 -->
+      <button class="key fn" data-insert="(">(</button>
+      <button class="key fn" data-insert=")">)</button>
+      <button class="key fn" data-insert="%">%</button>
+      <button id="clear" class="key danger">C</button>
+      <button id="backspace" class="key danger">⌫</button>
+
+      <!-- Row 5 -->
+      <button class="key num" data-insert="7">7</button>
+      <button class="key num" data-insert="8">8</button>
+      <button class="key num" data-insert="9">9</button>
+      <button class="key op" data-insert="÷">÷</button>
+      <button class="key op" data-insert="×">×</button>
+
+      <!-- Row 6 -->
+      <button class="key num" data-insert="4">4</button>
+      <button class="key num" data-insert="5">5</button>
+      <button class="key num" data-insert="6">6</button>
+      <button class="key op" data-insert="−">−</button>
+      <button class="key op" data-insert="+">+</button>
+
+      <!-- Row 7 -->
+      <button class="key num" data-insert="1">1</button>
+      <button class="key num" data-insert="2">2</button>
+      <button class="key num" data-insert="3">3</button>
+      <button class="key num" data-insert="0">0</button>
+      <button class="key num" data-insert=".">.</button>
+
+      <!-- Row 8 -->
+      <button id="ans" class="key fn">Ans</button>
+      <button id="equals" class="key equals">=</button>
+    </div>
+
+    <div class="history">
+      <div class="history-head">
+        <span>History</span>
+        <button id="clearHistory">Clear</button>
+      </div>
+      <ul id="historyList"></ul>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
